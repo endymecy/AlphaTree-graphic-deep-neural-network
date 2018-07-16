@@ -94,6 +94,25 @@ PS： caffe 模型可视化网址 http://ethereon.github.io/netscope/#/editor
 
 ![allmodel](https://github.com/weslynn/graphic-deep-neural-network/blob/master/pic/allmodel.png)
 
+
+
+
+|模型名 |AlexNet |ZFNet|VGG |GoogLeNet |ResNet|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|初入江湖  |2012 |2013 |2014  |2014  |2015|
+|层数  |8 |8 |19 |22  |152|
+|Top-5错误 |16.4% |11.2%|7.3%  |6.7%  |3.57%|
+|Data Augmentation |+ |+ |+ |+ |+|
+|Inception(NIN)  |– |– |– |+ |–|
+|卷积层数  |5 |5 |16  |21  |151|
+|卷积核大小 |11,5,3 | 7,5,3| 3 |7,1,3,5 |7,1,3|
+|全连接层数 |3 |3 |3 |1 |1|
+|全连接层大小  |4096,4096,1000|4096,4096,1000|4096,4096,1000  |1000  |1000|
+|Dropout |+|+|+ |+ |+|
+|Local Response Normalization  |+|+|– |+ |–|
+|Batch Normalization |–|–|– |– |+|
+
+
 ### LeNet  [详解 detail](https://github.com/weslynn/graphic-deep-neural-network/blob/master/object%20classification%20%E7%89%A9%E4%BD%93%E5%88%86%E7%B1%BB/LeNet.md)  Yann LeCun
 
 * LeNet  最经典的CNN网络
@@ -891,7 +910,7 @@ Faster R-CNN = Region Proposal Network +Fast R-CNN
 
 * SSD SSD是一种直接预测bounding box的坐标和类别的object detection算法，没有生成proposal的过程。它使用object classification的模型作为base network，如VGG16网络，
 
-   <a href="https://github.com/weslynn/graphic-deep-neural-network/blob/master/object%20detection%20%E7%89%A9%E4%BD%93%E6%A3%80%E6%B5%8B/SSD.md"><img src="https://github.com/weslynn/graphic-deep-neural-network/blob/master/modelpic/ssd.png" width="805"></a>
+   <a href="https://github.com/weslynn/graphic-deep-neural-network/blob/master/object%20detection%20%E7%89%A9%E4%BD%93%E6%A3%80%E6%B5%8B/SSD.md"><img src="https://github.com/weslynn/graphic-deep-neural-network/blob/master/modelpic/objdetection/ssd.png" width="805"></a>
 
    [7] Liu, Wei, et al. "SSD: Single Shot MultiBox Detector." arXiv preprint arXiv:1512.02325 (2015). [pdf](https://arxiv.org/pdf/1512.02325.pdf)  
 
